@@ -181,3 +181,54 @@ git commit -m "Your commit message here"
 - This command commits all staged changes with a descriptive message.
 
 ---
+#================================================================================#
+1. View available options:
+```sh
+npx playwright codegen --help
+```
+2. Run with or without a URL:
+```sh
+npx playwright codegen
+npx playwright codegen https://katalon-demo-cura.herokuapp.com/
+```
+
+[💡] __Use CLI for__
+- Device emulation
+- Custom viewport settings
+- Automation scripts and advanced workflows
+
+🎯 **Codegen** can drastically reduce your test writing time and help you learn the best locator strategies along the way.
+
+---
+
+#================================================================================#
+# Recommended VS Code Extensions
+
+- vscode-icons
+- Prettier - Code formatter
+- Path Intellisense
+- npm Intellisense
+- DotENV
+- JavaScript (ES6) code snippets
+- .gitignore Generator
+
+---
+
+Install these extensions from the VS Code Extensions Marketplace for a smoother and more productive workflow.
+### Option 1: VS Code Extension
+
+1. Open the VS CODE Extensions Marketplace and install:  
+   **`Playwright Test for VSCode`**
+2. Once installed, look for a new **laboratory flask icon** in the sidebar. Click to open the extension.
+3. You can now:
+   - **Record tests** interactively
+   - **Capture locators** with tooltips and visibility checks
+
+[💡] __Tips While Using the Extension__
+- Click on `assertion` tooltips to select an element.
+  - `Visibility` checks ensure the element is ready before interacting.
+  - `text` selectors provide an extra layer of validation.
+
+---
+
+#================================================================================#

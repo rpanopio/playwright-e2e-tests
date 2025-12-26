@@ -1,0 +1,11 @@
+{
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.indentSize": "tabSize",
+"editor.tabCompletion": "off",
+"editor.insertSpaces": false,
+"editor.language.colorizedBracketPairs": [
+
+],
+"editor.formatOnType": true
+}
