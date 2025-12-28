@@ -232,3 +232,108 @@ Install these extensions from the VS Code Extensions Marketplace for a smoother 
 ---
 
 #================================================================================#
+# Button and Link Interactions
+
+## Click Actions
+### Methods Used
+```js
+// Single click on button or link
+.click()  
+
+// Double click on button or link
+.dblclick()
+
+// Right click on button or link (context menu)
+.click({button: 'right'})
+
+// Press Enter key on focused element
+.press('Enter')
+
+// Hover over element to show tooltips or trigger hover effects
+.hover()
+
+// Click with custom timeout
+.click({timeout: 5000})
+```
+
+---
+
+## Pro Tips
+- ✅ Use `.click()` for most button and link interactions - it's the most reliable method.
+- ✅ Use `.press('Enter')` as an alternative to clicking, especially for accessibility testing.
+- ✅ Use `.hover()` to trigger hover states before clicking if needed for dropdown menus.
+- ✅ Use `.dblclick()` for elements that require double-click activation.
+- ✅ Set custom timeouts with `{timeout: 5000}` for slow-loading elements.
+- ✅ Right-click with `{button: 'right'}` to test context menus.
+
+---
+
+## Reference 
+- Key reference: https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values
+
+#======================================================================================# 
+Checkbox and Radio Button Interactions
+
+## Check/Uncheck Actions
+### Methods Used
+```js
+// Check a checkbox or radio button
+.check()
+
+// Uncheck a checkbox (not applicable to radio buttons)
+.uncheck()
+
+// Toggle checkbox state
+.setChecked(true)  // Check
+.setChecked(false) // Uncheck
+
+// Get inner text content
+.innerText()
+
+// Get all elements
+.all()
+```
+
+---
+
+---
+
+## Pro-tips
+
+- **Radio Button**: Allows selecting only one option from a group
+- **Checkbox**: Allows multiple selections (multi-entry)
+
+---
+#=======================================================================================#
+# Working with Multiple Elements 
+
+## List Iteration and Array Manipulation
+### Methods Used
+```js
+// Use of CSS selector
+.locator(".className")
+
+// Count elements
+.count()
+
+// Get specific element by index
+.nth(index)
+
+// Locator chaining for nested elements
+.locator(".parent").locator(".child")
+
+// Get text content
+.innerText()
+.textContent()
+
+// String manipulation
+.trim()
+.replace("$", "")
+
+// Array methods
+.map()
+.filter()
+.push()
+```
+
+---
