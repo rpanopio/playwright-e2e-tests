@@ -13,4 +13,4 @@ allure-results/
 tests-examples/
 examples.*
 *.log
-tests/ 
+tests/test-*.spec.ts 
