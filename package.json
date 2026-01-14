@@ -12,6 +12,8 @@
     "type": "commonjs",
     "main": "index.js",
     "scripts": {
+        "demo:tag": "npx playwright test --grep @smoke --headed",
+        "pw-basic-cap": "npx playwright test tests/demo/pw.basic.cap.make.aptmnt.spec.ts --headed",
         "debug:trace": "npx playwright test tests/demo/debug.make.aptmnt.spec.ts --trace on",
         "debug:cli": "PWDEBUG=1 npx playwright test tests/demo/debug.make.aptmnt.spec.ts",
         "debug:ui": "npx playwright test tests/demo/debug.make.aptmnt.spec.ts --ui --headed",
@@ -25,6 +27,6 @@
     "devDependencies": {
         "@playwright/test": "^1.57.0",
         "@types/node": "^25.0.3",
-        "allure-playwright": "^3.4.3"
+        "allure-playwright": "^3.4.5"
     }
 }

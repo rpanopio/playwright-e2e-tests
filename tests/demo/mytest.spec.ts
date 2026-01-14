@@ -15,10 +15,10 @@ test("Should load home page with correct title", async ({ page }) =>
 test("Should do something", { tag: "@smoke" }, async ({ page }, testInfo) => 
 {
 	// steps..
-	await page.locator("//h1").click();
+	await page.locator("h1").click();
 });
 
-test.only("Should demo locators", async ({ page }) =>
+test("Should demo locators", async ({ page }) =>
 {
 	// `page.getBy*()` and `page.locator()` methods returns the `locator` object
 	// The above methods not to be `awaited`
@@ -36,4 +36,15 @@ test.only("Should demo locators", async ({ page }) =>
 
 	await page.getByRole('heading', { name: 'We Care About Your Health' }).click()
 
+});
+
+test("Should demo config file", async ({ page }, testInfo) =>
+{
+	console.log(`>> Config at run-time: ${JSON.stringify(testInfo.config)}`);
+});
+
+
+test.only("Should demo fixtures", async ({ page, browserName }, testInfo) =>
+{
+	console.log(`>> The test runs on ${browserName}`);
 });
